@@ -53,8 +53,9 @@
     display: flex;
     width: 100%;
     background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   }
-
+ 
   nav img {
     width: 100px;
     margin-right: 750px;
@@ -64,17 +65,28 @@
   }
 
   .head {
-
-    font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: rgb(255, 255, 255);
     background-color: rgb(188, 36, 36);
-    text-align: center;
-    padding-top: 13px;
     height: 35px;
+    overflow: hidden;
     width: 100%;
+    font-size: 20px;
   }
-
+  
+  .head h1{
+    text-align: center;
+    position: relative;
+    font-size: 16px;
+    font-family: poppins;
+    font-weight:500;
+    /* margin-left: 500px;
+     */
+     left: -100%;
+     transition: 1s left ease;
+  }
   .top {
     text-align: center;
     padding: 90px;
@@ -136,6 +148,20 @@
     border-radius: 10px;
     width: 45%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation-delay: calc(sibling-index() * 0.5s);
+  animation-fill-mode: forwards;
+}
+@keyframes move-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
   }
 
   .form-container h2 {
@@ -250,17 +276,23 @@
  
 
   .hero {
+    width: 70%;
+    /* margin: auto; */
+    justify-content: center;
     display: flex;
-    margin: 40px;
-    margin-top: 10%;
-    gap: 10%;
-    padding-left: 10%;
-
-
+   gap: 70px;
+    margin: 30px;
+    margin-top: 10%; 
+    margin-bottom: 10%;
+  }
+  .jero
+  {
+    margin-left: 220px; 
+    
   }
 
   .pic {
-    width: 45%;
+    width: 50%;
   }
 
   #hii {
@@ -581,4 +613,103 @@ div.bt {
 
 .ima:hover {
   transform: scale(1.04);
+}
+#t{
+margin-bottom: 8%; 
+}
+.sm{
+  
+  
+  
+  margin: auto;
+  justify-content: center;  
+  background: #f6f6f6;
+   padding: 0 0 70px 0;
+  
+}
+.mukesh{
+ padding-left: 35px;
+  gap: 50px;
+  margin: auto;
+  width: 90%;
+  display: flex;
+  margin-top: 8%;
+}
+.mukesh img{
+  width: 50%;
+  /* margin: auto; */
+  margin-top: 10%;
+  border-radius: 12px;
+  height: 400px;
+
+}
+.suraj{
+ /* width: 100%; */
+ background-color: #141e25;
+  margin: auto;
+  height: 600px;
+  color: white;
+}
+.suraj h1 
+{
+  text-align: center;
+  padding-top: 150px;
+  font-size: 2.8rem;
+  font-family: poppins;
+}
+.suraj p
+{
+  
+  text-align: center;
+  padding: 3%;
+  font-size: 17px;
+  line-height: 28px;
+  font-family: poppins;
+}
+
+.mahipal h1
+{
+  font-size: 2.6rem;
+  font-weight:700;
+}
+.mahipal p
+{
+  line-height:30px;
+  word-spacing: 3px;
+  font-size: 19px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  margin-top: 20px;
+
+}
+.pandit{
+
+}
+#mo{
+
+  
+  width: 95%;
+  margin: auto;
+   /* background-color: #e0efff;  */
+  
+}
+.bhuvan{
+  /* word-spacing: 2px; */
+   line-height: 25px;
+
+}
+.bhuvan h3{
+  text-align: center;
+  padding: 15px;
+}
+.pandit h3{
+  text-align: center;
+  padding: 20px;
+  margin-top: 25px;
+}
+.pandit{
+  line-height: 25px;
+  height: 400px;
+  /* background-color: #000000; */
+
 }
