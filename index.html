@@ -7,58 +7,77 @@
     <title></title>
     <link rel="stylesheet" href="shop.css">
 </head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
 
 <header>
-     <h1 class="head">TRY BEFORE YOU COMMIT: BOOK A FREE DEMO CLASS TODAY!</h1>
-     <main>
-        
+    <div class="head">
+        <h1 id="news">TRY BEFORE YOU COMMIT: BOOK A FREE DEMO CLASS TODAY!</h1>
+    </div>
+    <main>
+
         <nav>
             <img src="images/arena.jpeg" alt="arena">
-              <button id="btn3">☀️</button>
-             <ul>
+            <button id="btn3">☀️</button>
+            <ul>
                 <li><a href="best.html">Courses</a></li>
-                <li><a href="">Placements</a></li>
+                <li><a href="About.html">About</a></li>
                 <li><a href="">Events</a></li>
                 <li><a href="contact.html">Contact us</a></li>
             </ul>
-            
+
         </nav>
 
-     </main>
+    </main>
 
 </header>
 
 
 
 
-  
+
 
 
 <body>
     <button id="btn1">↑</button>
 
-            <script>
+    <script>
+        let news = document.getElementById("news")
+        var btn = document.getElementById("btn3")
 
-                var btn = document.getElementById("btn3")
+        btn3.onclick = function () {
 
-                btn3.onclick = function () {
+            document.body.classList.toggle("dark")
 
-                    document.body.classList.toggle("dark")
+            if (document.body.classList.contains("dark")) {
+                btn3.innerHTML = "☀️"
+            }
+            else {
+                btn3.innerHTML = "🌙"
+            }
+        }
 
-                    if (document.body.classList.contains("dark")) {
-                        btn3.innerHTML = "☀️"
-                    }
-                    else {
-                        btn3.innerHTML = "🌙"
-                    }
+        function nfloat() {
+            let count = -100
+            setInterval(() => {
+                count++
+                news.style.left = `${count}%`
+                if (count == 100) {
+                    count = -100
                 }
-            </script>
+            }, 100);
+
+
+        }
+        nfloat()
+    </script>
 
 
 
-           
 
-      
+
+
 
 
     <div class="top">
@@ -67,23 +86,23 @@
             5 lakh+ alumni who'vs transformed their passion into<br> thriving careers.
         </h2>
     </div>
+    <div class="jero">
+        <div class="hero">
+            <div class="bild">
+                <span id="hii">Your Future</span>
+                <h1 id="your"> Your Career in Animation & Design</h1>
 
-    <div class="hero">
-        <div class="bild">
-            <span id="hii">Your Future</span>
-            <h1 id="your"> Your Career in Animation & Design</h1>
-           
 
-            <p>Learn Animation, VFX, Graphic Design, and Web Design with practical training and creative projects from
-                experienced industry mentors.</p>
+                <p>Learn Animation, VFX, Graphic Design, and Web Design with practical training and creative projects
+                    from
+                    experienced industry mentors.</p>
+            </div>
+            <img class="pic" src="images/ui2.jpg" alt="">
         </div>
-         <img class="pic" src="images/ui2.jpg" alt="">
-
-       
     </div>
 
 
-   
+
 
     <section class="contener">
         <h1>Popular Courses</h1>
@@ -94,7 +113,7 @@
                     <h2>UI/UX Design</h2>
                     <p>Master wireframing, prototyping, and user-centric visual design using industry-standard tools
                         like Figma, HTML, and CSS.</p>
-                    <button id="bo">view courses</button>
+                     <a href="best.html"><button id="bo">view courese</button"></a>
                 </div>
             </div>
             <div class="box2">
@@ -104,7 +123,7 @@
                     <h2>VFX Film Making</h2>
                     <p>Learn cutting-edge visual effects, motion graphics, and compositing for film, television, and
                         YouTube production.</p>
-                    <button id="bo">view courses</button>
+                  <a href="best.html"><button id="bo">view courses</button></a> 
                 </div>
             </div>
 
@@ -115,7 +134,7 @@
                     <h2>Graphic </h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus corrupti ducimus doloremque iure
                         cum nesciunt?</p>
-                    <button id="bo">view courses</button>
+                    <a href="best.html"><button id="bo">view courses</button></a>
                 </div>
             </div>
     </section>
@@ -158,34 +177,34 @@
 
 <footer>
     <div>
-    <h3> Arena Animation </h3>
-    <p>Creative learning institute for</p>
-    <p> design and animation.</p>
-  </div>
-  <div>
-    <h3> Quick Links </h3>
-    <p>
+        <h3> Arena Animation </h3>
+        <p>Creative learning institute for</p>
+        <p> design and animation.</p>
+    </div>
+    <div>
+        <h3> Quick Links </h3>
+        <p>
 
-      <a href="index.html">Home</a>
-    </p>
-    <p>
-      <a href="contact.html">About Us</a>
-    </p>
-    <p>
-      <a href="best.html">Courses</a>
-    </p>
-    </p>
-  </div>
-  <div>
-    <h3> Contact </h3>
-    <p>Email:info@arena.com</p>
-    <p>Phone: +91 8976543210</p>
-    </p>
-  </div>
+            <a href="index.html">Home</a>
+        </p>
+        <p>
+            <a href="contact.html">About Us</a>
+        </p>
+        <p>
+            <a href="best.html">Courses</a>
+        </p>
+        </p>
+    </div>
+    <div>
+        <h3> Contact </h3>
+        <p>Email:info@arena.com</p>
+        <p>Phone: +91 8976543210</p>
+        </p>
+    </div>
 </footer>
 <div class="cop">@ 2026 Arena Animation. All Rights Reserved. | Created by Amit</div>
 <script src="script.js"></script>
-<span id="PING_FORM_DETECTION" style="display: none;"></span>
+<!-- <span id="PING_FORM_DETECTION" style="display: none;"></span> -->
 
 
 
